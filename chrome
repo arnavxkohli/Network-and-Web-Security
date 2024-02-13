@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Starting Chrome in interceptor mode..."
+google-chrome \
+--proxy-server="http=127.0.0.1:8080;https=127.0.0.1:8080" \
+> /dev/null 2> /dev/null & # run in the background and be quiet
