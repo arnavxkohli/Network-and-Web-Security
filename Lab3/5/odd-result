@@ -1,0 +1,101 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-02-17 19:03 GMT
+Nmap scan report for 10.6.66.67
+Host is up (0.0014s latency).
+Not shown: 65530 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+21/tcp    open  ftp     vsftpd 3.0.2
+22/tcp    open  ssh?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, NULL, RPCCheck: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|   GenericLines, SSLSessionReq: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you,
+|   GetRequest: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you, GET / HTTP/1.0
+|   HTTPOptions: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you, OPTIONS / HTTP/1.0
+|   Help: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you, HELP
+|   RTSPRequest: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you, OPTIONS / RTSP/1.0
+|   TLSSessionReq: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you, 
+|     random1random2random3random4
+|   TerminalServerCookie: 
+|     This is not an SSH server - it's a "hello" server.
+|     Type your name:
+|     Nice to meet you, 
+|_    Cookie: mstshash=nmap
+53/tcp    open  domain  dnsmasq 2.72
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.72
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+13337/tcp open  http    Apache httpd 2.4.10 ((Debian))
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port22-TCP:V=7.94SVN%I=7%D=2/17%Time=65D10328%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,43,"This\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20\
+SF:"hello\"\x20server\.\nType\x20your\x20name:\n")%r(GenericLines,58,"This
+SF:\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20\"hello\"\x20
+SF:server\.\nType\x20your\x20name:\nNice\x20to\x20meet\x20you,\x20\r!\n")%
+SF:r(GetRequest,66,"This\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\
+SF:x20a\x20\"hello\"\x20server\.\nType\x20your\x20name:\nNice\x20to\x20mee
+SF:t\x20you,\x20GET\x20/\x20HTTP/1\.0\r!\n")%r(HTTPOptions,6A,"This\x20is\
+SF:x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20\"hello\"\x20server\
+SF:.\nType\x20your\x20name:\nNice\x20to\x20meet\x20you,\x20OPTIONS\x20/\x2
+SF:0HTTP/1\.0\r!\n")%r(RTSPRequest,6A,"This\x20is\x20not\x20an\x20SSH\x20s
+SF:erver\x20-\x20it's\x20a\x20\"hello\"\x20server\.\nType\x20your\x20name:
+SF:\nNice\x20to\x20meet\x20you,\x20OPTIONS\x20/\x20RTSP/1\.0\r!\n")%r(RPCC
+SF:heck,43,"This\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20
+SF:\"hello\"\x20server\.\nType\x20your\x20name:\n")%r(DNSVersionBindReqTCP
+SF:,43,"This\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20\"he
+SF:llo\"\x20server\.\nType\x20your\x20name:\n")%r(DNSStatusRequestTCP,43,"
+SF:This\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20\"hello\"
+SF:\x20server\.\nType\x20your\x20name:\n")%r(Help,5C,"This\x20is\x20not\x2
+SF:0an\x20SSH\x20server\x20-\x20it's\x20a\x20\"hello\"\x20server\.\nType\x
+SF:20your\x20name:\nNice\x20to\x20meet\x20you,\x20HELP\r!\n")%r(SSLSession
+SF:Req,8A,"This\x20is\x20not\x20an\x20SSH\x20server\x20-\x20it's\x20a\x20\
+SF:"hello\"\x20server\.\nType\x20your\x20name:\nNice\x20to\x20meet\x20you,
+SF:\x20\x16\x03\0\0S\x01\0\0O\x03\0\?G\xd7\xf7\xba,\xee\xea\xb2`~\xf3\0\xf
+SF:d\x82{\xb9\xd5\x96\xc8w\x9b\xe6\xc4\xdb<=\xdbo\xef\x10n\0\0\(\0\x16\0\x
+SF:13\0!\n")%r(TerminalServerCookie,78,"This\x20is\x20not\x20an\x20SSH\x20
+SF:server\x20-\x20it's\x20a\x20\"hello\"\x20server\.\nType\x20your\x20name
+SF::\nNice\x20to\x20meet\x20you,\x20\x03\0\0\*%\xe0\0\0\0\0\0Cookie:\x20ms
+SF:tshash=nmap\r!\n")%r(TLSSessionReq,88,"This\x20is\x20not\x20an\x20SSH\x
+SF:20server\x20-\x20it's\x20a\x20\"hello\"\x20server\.\nType\x20your\x20na
+SF:me:\nNice\x20to\x20meet\x20you,\x20\x16\x03\0\0i\x01\0\0e\x03\x03U\x1c\
+SF:xa7\xe4random1random2random3random4\0\0\x0c\0/\0!\n");
+MAC Address: 08:00:27:63:24:F2 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Network Distance: 1 hop
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.41 ms 10.6.66.67
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 133.15 seconds
