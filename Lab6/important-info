@@ -1,0 +1,1 @@
+Apparently, when you store data with a quote on an sql server after it is escaped, on displaying it the data is unescaped. That's why sql injection will not work here. You need to study all the code of the dvwa.

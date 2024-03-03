@@ -1,0 +1,3 @@
+' UNION SELECT user, password FROM users; #
+
+same trick as before. Remind me why the fuck this is harder than medium???

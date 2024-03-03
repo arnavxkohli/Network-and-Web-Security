@@ -1,0 +1,5 @@
+Why does the cookie only get sent when I send another request?
+
+Why does changing the case of script in the script tag not work for medium? Isn't that the mitigation suggested for High?
+
+Why does src embedding not work?

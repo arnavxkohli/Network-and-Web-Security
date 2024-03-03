@@ -2,5 +2,5 @@ IP address: 10.6.66.42
 Running: Linux 3.X|4.X
 OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
 OS details: Linux 3.2 - 4.9
-PHP Vesion: PHP/5.6.29-0+deb8u1 
+PHP Version: PHP/5.6.29-0+deb8u1 
 Server Software: Apache/2.4.10 (Debian)

