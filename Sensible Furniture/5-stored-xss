@@ -1,3 +1,5 @@
 <script> window.alert('hi') </script>
 
 you can add this anywhere in the admin panel.
+
+Actually, it is the price in the upload new item that is vulnerable. Probably not ensuring it is a number. All of the other entries are being escaped correctly by the javascript.

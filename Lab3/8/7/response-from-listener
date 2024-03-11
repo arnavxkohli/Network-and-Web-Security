@@ -1,0 +1,4 @@
+sudo nc -lvnp 33100
+listening on [any] 33100 ...
+connect to [10.6.66.64] from (UNKNOWN) [10.6.66.67] 56469
+https://i.imgur.com/TONk91Y.jpg
