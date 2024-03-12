@@ -1,0 +1,6 @@
+nc 10.6.66.67 13337
+GET /test 
+
+nc 10.6.66.67 13337
+GET /browsercheck HTTP/1.0
+User-Agent: Awesome Imperial College London Browser/331

