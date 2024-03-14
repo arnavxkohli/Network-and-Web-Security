@@ -1,0 +1,5 @@
+mysql -u csecvm -p -e "SELECT schema_name FROM information_schema.schemata" > /tmp/schema.txt
+
+mysql -u csecvm -pH93AtG6akq csecvm -e "SELECT table_name FROM information_schema.tables" > /tmp/output.txt
+
+mysql -u csecvm -pH93AtG6akq csecvm -e "SELECT * FROM token" > /tmp/output.txt
